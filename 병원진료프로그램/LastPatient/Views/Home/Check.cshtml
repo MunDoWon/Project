@@ -1,0 +1,56 @@
+﻿@model LastPatient.Controllers.VisitPatients
+
+@{
+    ViewData["Title"] = "Check";
+}
+
+<h1>Check</h1>
+
+<h4>Patient</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Check">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="VisitName" class="control-label">방문자이름</label>
+                <input asp-for="VisitName" class="form-control" />
+                <span asp-validation-for="VisitName" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="VisitPatient" class="control-label">방문자환자</label>
+                <input asp-for="VisitPatient" class="form-control" />
+                <span asp-validation-for="VisitPatient" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="VisitHp" class="control-label">방문자전화번호</label>
+                <input asp-for="VisitHp" class="form-control" />
+                <span asp-validation-for="VisitHp" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="VisitOX" class="control-label">방문사유</label>
+                <input asp-for="VisitOX" class="form-control" />
+                <span asp-validation-for="VisitOX" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<div>
+    <a asp-action="Medicine">뒤로가기</a>
+</div>

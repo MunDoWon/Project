@@ -1,0 +1,238 @@
+﻿@model LastPatient.Controllers.Patient
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+<style>
+    #btn_Up {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h4>진단서</h4>
+            <hr />
+
+            <dt class="col-sm-2">
+                <a>성함</a>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt class="col-sm-2">
+                <a>증상</a>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Symptom)
+            </dd>
+
+            <dt class="col-sm-2">
+                <a>접수 날짜</a>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Date)
+            </dd>
+
+            <dt class="col-sm-2">
+                <a>생년월일</a>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Birthdate)
+            </dd>
+
+            <dt class="col-sm-2">
+                <a>할인 요소</a>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Discounts)
+            </dd>
+
+            <dt class="col-sm-2">
+                <a>외과</a>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Surgery)
+            </dd>
+
+            <dt class="col-sm-2">
+                <a>내과</a>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Medicine)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.MRI)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.MRI)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CT)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CT)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.X_ray)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.X_ray)
+            </dd>
+
+            <dt class="col-sm-2">
+                <a>진료 항목</a>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.TreatmentDetails)
+            </dd>
+
+            <dt class="col-sm-2">
+                <a>진료 날짜</a>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.TreatmentDate)
+            </dd>
+
+            <dt class="col-sm-2">
+                <a>예약 날짜</a>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.ReservationDate)
+            </dd>
+
+            <dt class="col-sm-2">
+                <a>입원 날짜</a>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.HospitalizationDate)
+            </dd>
+
+            <dt class="col-sm-2">
+                <a>퇴원 날짜</a>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DischargeDate)
+            </dd>
+        </div>
+
+        <div class="col-md-6">
+            <h4>진단창</h4>
+            <hr />
+            <form asp-action="Update">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Id" class="control-label">아이디</label>
+                            <input asp-for="Id" class="form-control" disabled />
+                            <span asp-validation-for="Id" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label">이름</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Discounts" class="control-label">할인 유형</label>
+                    <select asp-for="Discounts" class="form-control">
+                        <option value="없음">없음</option>
+                        <option value="어린이">어린이</option>
+                        <option value="노약자">노약자</option>
+                        <option value="국가유공자">국가유공자</option>
+                    </select>
+                    <span asp-validation-for="Discounts" class="text-danger"></span>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label asp-for="Surgery" class="control-label">외과</label>
+                        <input asp-for="Surgery" class="form-control" />
+                        <span asp-validation-for="Surgery" class="text-danger"></span>
+                    </div>
+                    <br />
+
+                    <div class="form-group">
+                        <label asp-for="Medicine" class="control-label">내과</label>
+                        <input asp-for="Medicine" class="form-control" />
+                        <span asp-validation-for="Medicine" class="text-danger"></span>
+                    </div>
+                    <br />
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label asp-for="MRI" class="control-label">MRI</label>
+                        <input asp-for="MRI" class="form-control" />
+                        <span asp-validation-for="MRI" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="CT" class="control-label">CT</label>
+                        <input asp-for="CT" class="form-control" />
+                        <span asp-validation-for="CT" class="text-danger"></span>
+                    </div>
+                    <br />
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label asp-for="X_ray" class="control-label">X-Ray</label>
+                        <input asp-for="X_ray" class="form-control" />
+                        <span asp-validation-for="X_ray" class="text-danger"></span>
+                    </div>
+                    <br />
+
+                    <div class="form-group">
+                        <label asp-for="TreatmentDetails" class="control-label">진료 항목</label>
+                        <input asp-for="TreatmentDetails" class="form-control" />
+                        <span asp-validation-for="TreatmentDetails" class="text-danger"></span>
+                    </div>
+                    <br />
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label asp-for="TreatmentDate" class="control-label">진료 날짜</label>
+                        <input asp-for="TreatmentDate" class="form-control" />
+                        <span asp-validation-for="TreatmentDate" class="text-danger"></span>
+                    </div>
+                    <br />
+
+                    <div class="form-group">
+                        <label asp-for="ReservationDate" class="control-label">예약 날짜</label>
+                        <input asp-for="ReservationDate" class="form-control" />
+                        <span asp-validation-for="ReservationDate" class="text-danger"></span>
+                    </div>
+                    <br />
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label asp-for="HospitalizationDate" class="control-label">입원 날짜</label>
+                        <input asp-for="HospitalizationDate" class="form-control" />
+                        <span asp-validation-for="HospitalizationDate" class="text-danger"></span>
+                    </div>
+                    <br />
+
+                    <div class="form-group">
+                        <label asp-for="DischargeDate" class="control-label">퇴원 날짜</label>
+                        <input asp-for="DischargeDate" class="form-control" />
+                        <span asp-validation-for="DischargeDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group" id="btn_Up">
+                    <input type="submit" value="저장하기" class="btn btn-primary" />
+                    <a asp-action="Medicine" type="submit" value="처음으로" class="btn btn-primary">뒤로가기</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

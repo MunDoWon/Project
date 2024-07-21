@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @*---------------- 파일이름 변경하기---------------- *@
+    <title>@ViewData["Title"] - TestTest</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TestTest.styles.css" asp-append-version="true" />
+    <style>
+        .text-end{
+            padding-right : 10%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="px-3 py-2 border-bottom mb-3">
+        
+
+            <div class="text-end">
+                <button type="button" class="btn btn-light text-dark me-2" id="signinButton">로그인</button>
+                <button type="button" class="btn btn-light text-dark me-2" id="signoutButton">로그아웃</button>
+                <button type="button" class="btn btn-primary" id="signupButton">회원가입</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script>
+        document.getElementById("signinButton").addEventListener("click", function () {
+            // 회원가입 버튼을 클릭했을 때 Create 뷰로 이동
+            window.location.href = "/Home/Login"; // ControllerName은 실제 컨트롤러 이름으로 변경
+        });
+    </script>
+    <script>
+        document.getElementById("signoutButton").addEventListener("click", function () {
+            // 회원가입 버튼을 클릭했을 때 Create 뷰로 이동
+            window.location.href = "/Home/Logout"; // ControllerName은 실제 컨트롤러 이름으로 변경
+        });
+    </script>
+
+    <script>
+        document.getElementById("signupButton").addEventListener("click", function () {
+            // 회원가입 버튼을 클릭했을 때 Create 뷰로 이동
+            window.location.href = "/Home/Sign"; // ControllerName은 실제 컨트롤러 이름으로 변경
+        });
+    </script>
+  
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                
+            </ul>
+            <p class="text-center text-body-secondary">김상훈 | 정종환 | 문도원 | 장지현</p>
+        </footer>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+﻿@using LastPatient.Controllers;
+@model Patient
+@{
+    ViewData["Title"] = "UpdatePatient";
+}
+
+<h1>진단서</h1>
+
+<form asp-action="UpdatePatient" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Id"></label>
+        <input asp-for="Id" class="form-control" />
+        <span asp-validation-for="Id" class="text-danger"></span>
+    </div>
+    <br/>
+    <div class="form-group">
+        <label asp-for="TreatmentDetails"></label>
+        <input asp-for="TreatmentDetails" class="form-control" />
+        <span asp-validation-for="TreatmentDetails" class="text-danger"></span>
+    </div>
+
+    <!-- 추가 필드는 위와 같이 수정하세요. -->
+
+    <button type="submit" class="btn btn-primary">진단</button>
+</form>

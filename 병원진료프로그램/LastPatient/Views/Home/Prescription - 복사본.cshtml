@@ -1,0 +1,50 @@
+﻿@model LastPatient.Controllers.Prescription
+
+@{
+    ViewData["Title"] = "Prescription";
+}
+<link rel="stylesheet" type="text/css" href="~/css/Create.css">
+
+
+
+
+<h4 id="MainTitle">처방전</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Prescription">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PatientId" class="control-label"></label>
+                <input asp-for="PatientId" class="form-control" />
+                <span asp-validation-for="PatientId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoctorId" class="control-label"></label>
+                <input asp-for="DoctorId" class="form-control" />
+                <span asp-validation-for="DoctorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrescriptionDate" class="control-label"></label>
+                <input asp-for="PrescriptionDate" class="form-control" />
+                <span asp-validation-for="PrescriptionDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MedicationName" class="control-label"></label>
+                <input asp-for="MedicationName" class="form-control" />
+                <span asp-validation-for="MedicationName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dosage" class="control-label"></label>
+                <input asp-for="Dosage" class="form-control" />
+                <span asp-validation-for="Dosage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="만들기" class="btn btn-outline-primary" />
+                <a class="btn btn-outline-primary" asp-action="PrescriptionDetails">세부정보</a>
+                <a class="btn btn-outline-primary" asp-action="Medicine">뒤로가기</a>
+            </div>
+        </form>
+    </div>
+</div>
+

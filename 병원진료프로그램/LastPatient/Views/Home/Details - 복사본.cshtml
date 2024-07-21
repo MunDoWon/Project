@@ -1,0 +1,107 @@
+﻿@model LastPatient.Controllers.Patient
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link rel="stylesheet" type="text/css" href="~/css/Receipt.css">
+
+<div>
+    <h4 id="MainTitle">상세사항</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Symptom)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Symptom)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Birthdate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Birthdate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Discounts)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Discounts)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Surgery)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Surgery)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Medicine)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Medicine)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MRI)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MRI)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CT)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.X_ray)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.X_ray)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TreatmentDetails)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TreatmentDetails)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TreatmentDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TreatmentDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ReservationDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ReservationDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HospitalizationDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HospitalizationDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DischargeDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DischargeDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@Model?.Id">수정하기</a>
+    <a class="btn btn-primary" asp-action="Index">돌아가기</a>
+</div>

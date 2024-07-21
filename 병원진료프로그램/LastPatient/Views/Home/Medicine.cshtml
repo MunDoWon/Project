@@ -1,0 +1,65 @@
+﻿@model IEnumerable<LastPatient.Controllers.Patient>
+
+@{
+    ViewData["Title"] = "Medicine";
+}
+<link rel="stylesheet" type="text/css" href="~/css/Receipt.css">
+<h1 id="MainTitle">환자 목록</h1>
+
+
+
+
+<form asp-controller="Home" asp-action="Index" method="get" id="btn_search">
+    <p>
+        이름: <input type="text" name="SearchString" placeholder="이름을 입력해주세요." />
+        <input type="submit" value="검색" />
+    </p>
+</form>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                번호
+            </th>
+            <th>
+                성함
+            </th>
+            <th>
+                생일
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Birthdate)
+                </td>
+                <td>
+                    <a class="btn btn-outline-primary" asp-action="Update" asp-route-id="@item.Id">진단하기</a>
+                    <a class="btn btn-outline-primary" asp-action="Prescription" asp-route-id="@item.Id">처방전작성</a>
+                    <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@item.Id">진단완료</a>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <a class="btn btn-outline-primary" asp-action="Main">처음으로</a>
+    <a class="btn btn-outline-primary" href="@Url.Action("Visit", "Home")">면회 현황</a>
+</div>
+
+@section scripts {
+    <script>
+
+    </script>
+}

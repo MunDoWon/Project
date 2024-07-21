@@ -1,0 +1,91 @@
+﻿@model LastPatient.Controllers.Patient
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@*     <script src="~/js/Radio.js"></script> *@
+
+<link rel="stylesheet" type="text/css" href="~/css/Create.css">
+<h1 id="MainTitle">수정하기</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            @* ---------------------------이름---------------------------- *@
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            @* ---------------------------증상---------------------------- *@
+            <div class="form-group">
+                <label asp-for="Symptom" class="control-label">증상</label>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label><input type="radio" asp-for="Symptom" value="복통" /> 복통</label>
+                    </div>
+                    <div class="col-md-4">
+                        <label><input type="radio" asp-for="Symptom" value="두통" /> 두통</label>
+                    </div>
+                    <div class="col-md-4">
+                        <label><input type="radio" asp-for="Symptom" value="고열" /> 고열</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label><input type="radio" asp-for="Symptom" value="골절" /> 골절</label>
+                    </div>
+                    <div class="col-md-4">
+                        <label><input type="radio" asp-for="Symptom" value="염좌" /> 염좌</label>
+                    </div>
+                    <div class="col-md-4">
+                        <label><input type="radio" asp-for="Symptom" value="관절통" /> 관절통</label>
+                    </div>
+                </div>
+                <span asp-validation-for="Symptom" class="text-danger"></span>
+            </div>
+            <script src="~/js/Radio.js"></script>
+            @* ---------------------------날짜---------------------------- *@
+            @* <div class="form-group">
+            <label asp-for="Date" class="control-label"></label>
+            <input asp-for="Date" class="form-control" />
+            <span asp-validation-for="Date" class="text-danger"></span>
+            </div> *@
+            @* ---------------------------날짜---------------------------- *@
+            <div class="form-group">
+                <label asp-for="Date" class="control-label">날짜</label>
+                <input asp-for="Date" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss")" readonly />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            @* ---------------------------할인---------------------------- *@
+            <div class="form-group">
+                <label asp-for="Discounts" class="control-label">할인 유형</label>
+                <select asp-for="Discounts" class="form-control">
+                    <option value="없음">없음</option>
+                    <option value="어린이">어린이</option>
+                    <option value="노약자">노약자</option>
+                    <option value="국가유공자">국가유공자</option>
+                </select>
+                <span asp-validation-for="Discounts" class="text-danger"></span>
+            </div>
+            @* ---------------------------버튼---------------------------- *@
+            <div class="form-group">
+                <input type="submit" value="저장하기" class="btn btn-primary" />
+                <a class="btn btn-primary" id="btn_back" asp-action="Index">돌아가기</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

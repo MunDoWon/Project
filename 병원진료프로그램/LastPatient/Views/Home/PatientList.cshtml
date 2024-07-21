@@ -1,0 +1,50 @@
+﻿@model IEnumerable<LastPatient.Controllers.Patient>
+
+@{
+    ViewData["Title"] = "PatientList";
+}
+<link rel="stylesheet" type="text/css" href="~/css/Receipt.css">
+
+<h1 id="MainTitle"></h1>
+<hr />
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				<a>번호</a>
+			</th>
+			<th>
+				<a>성함</a>
+			</th>
+			<th>
+				<a>예약시간</a>
+			</th>
+			<th>
+				<a>기능</a>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var patient in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => patient.Id)번
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => patient.Name)님
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => patient.Date)
+				</td>
+				<td>
+					<a class="btn btn-primary" asp-action="PatientIndex" asp-route-id="@patient.Id">진료보기</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+
+<a class="btn btn-primary" id="btn_back" asp-action="Main">돌아가기</a>

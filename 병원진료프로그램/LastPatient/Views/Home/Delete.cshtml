@@ -1,0 +1,33 @@
+﻿@model LastPatient.Controllers.Patient
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+@* <link rel="stylesheet" type="text/css" href="~/css/Create.css"> *@
+
+<div class="container mt-4">
+    <h4 class="text-center">환자 정보</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3 text-right">이름:</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.Name)</dd>
+
+        <dt class="col-sm-3 text-right">증상:</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.Symptom)</dd>
+
+        <dt class="col-sm-3 text-right">할인:</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.Discounts)</dd>
+
+        <dt class="col-sm-3 text-right">날짜:</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.Date)</dd>
+
+
+    </dl>
+
+    <form asp-action="Delete" class="text-center mt-3">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">삭제하기</button>
+        <a class="btn btn-primary" id="btn_back" asp-action="Medicine">돌아가기</a>
+    </form>
+</div>

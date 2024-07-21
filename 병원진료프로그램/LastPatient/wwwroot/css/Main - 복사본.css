@@ -1,0 +1,137 @@
+﻿/*---------- 메인 페이지 ---------- */
+/*-----------가운데로 모이게 해줌-----------*/
+#Content, #MainTitle {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 54px;
+}
+
+.image-container {
+    display: flex; /* 이미지들을 가로로 정렬하기 위해 flex 사용 */
+    justify-content: center; /* 이미지들을 가로로 중앙 정렬 */
+    align-items: center; /* 이미지들을 세로로 중앙 정렬 */
+}
+
+.image-button {
+    margin: 5px;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper {
+    text-align: center;
+    margin: 0 10px;
+}
+
+    .image-wrapper img {
+        width: 300px;
+        height: 300px
+    }
+
+.image-label {
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 10px; /* 이미지 위에 여백 조절 */
+}
+/*---------- 카드 슬라이드---------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.marginLeft-5 {
+    margin-left: 5%;
+}
+
+.align-Colum {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.align-Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Weather-slideshow-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Weather-Slides {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    width: 1200px; /* 너비를 400px로 수정 */
+    height: 350px; /* 높이를 200px로 수정 */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Weather-prev,
+.Weather-next {
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+    width: auto;
+    padding: 20px;
+    color: #5B86EF;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;   
+    border-radius: 0 3px 3px 0
+}
+
+.Weather-next {
+    border-radius: 3px 3px 3px 3px
+}
+
+.Weather-prev {
+    border-radius: 3px 3px 3px 3px
+}
+
+    .Weather-prev:hover,
+    .Weather-next:hover {
+        color: black;
+    }
+
+.Weather-dot {
+    cursor: pointer;
+    height: 5px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #5B86EF;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+    .Weather-dot:hover {
+        background-color: black;
+    }
+
+
+.Wimg {
+    width: 1200px;
+    height: 350px;
+    border-radius: 20px;
+}

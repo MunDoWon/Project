@@ -1,0 +1,191 @@
+C:\Users\Admin\source\test\Server\Server\bin\Debug\Server.exe.config
+C:\Users\Admin\source\test\Server\Server\bin\Debug\Server.exe
+C:\Users\Admin\source\test\Server\Server\bin\Debug\Server.pdb
+C:\Users\Admin\source\test\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\Admin\source\test\Server\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\test\Server\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\Admin\source\test\Server\Server\obj\Debug\Server.csproj.GenerateResource.cache
+C:\Users\Admin\source\test\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\test\Server\Server\obj\Debug\Server.exe
+C:\Users\Admin\source\test\Server\Server\obj\Debug\Server.pdb
+C:\Users\Admin\source\test\Server\Server\obj\Debug\Server.MainForm.resources
+C:\Users\Admin\source\test\Server\Server\obj\Debug\Server.Ordermatter.resources
+C:\Users\Admin\source\test\Server\Server\obj\Debug\Server.OrderProduct.resources
+C:\Users\Admin\source\test\Server\Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Admin\source\test\Server\Server\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.Buffers.dll
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.Memory.dll
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.Text.Json.dll
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.ValueTuple.dll
+C:\Users\Admin\source\test\Server\Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.Buffers.xml
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.Memory.xml
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.Text.Json.xml
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Admin\source\test\Server\Server\bin\Debug\System.ValueTuple.xml
+C:\Users\Admin\source\test\Server\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\Admin\source\test\Server\Server\obj\Debug\Server.Select.resources
+C:\Users\Admin\source\test\Server\Server\obj\Debug\Server.Builder.resources
+C:\Users\Admin\source\test\Server\Server\obj\Debug\Server.Provide.resources
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\Server.exe.config
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\Server.exe
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\Server.pdb
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.Buffers.dll
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.Memory.dll
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.Text.Json.dll
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.ValueTuple.dll
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.Buffers.xml
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.Memory.xml
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.Text.Json.xml
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\bin\Debug\System.ValueTuple.xml
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.Builder.resources
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.Provide.resources
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.Select.resources
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.MainForm.resources
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.Ordermatter.resources
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.OrderProduct.resources
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.exe
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.pdb
+C:\Users\Admin\Documents\카카오톡 받은 파일\Server\Server\obj\Debug\Server.TestName.resources
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\Server.exe.config
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\Server.exe
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\Server.pdb
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.Buffers.dll
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.Memory.dll
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.Text.Json.dll
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.ValueTuple.dll
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.Buffers.xml
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.Memory.xml
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.Text.Json.xml
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Admin\Documents\새 폴더\Server\Server\bin\Debug\System.ValueTuple.xml
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.Builder.resources
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.TestName.resources
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.Provide.resources
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.Select.resources
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.MainForm.resources
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.Ordermatter.resources
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.OrderProduct.resources
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.exe
+C:\Users\Admin\Documents\새 폴더\Server\Server\obj\Debug\Server.pdb
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\Server.exe.config
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\Server.exe
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\Server.pdb
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.Buffers.dll
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.Memory.dll
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.Text.Json.dll
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.ValueTuple.dll
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.Buffers.xml
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.Memory.xml
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.Text.Json.xml
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Admin\source\test\Server (1)\Server\Server\bin\Debug\System.ValueTuple.xml
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.Builder.resources
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.TestName.resources
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.Provide.resources
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.Select.resources
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.MainForm.resources
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.Ordermatter.resources
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.OrderProduct.resources
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.csproj.GenerateResource.cache
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.exe
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.pdb
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.Login.resources
+C:\Users\Admin\source\test\Server (1)\Server\Server\obj\Debug\Server.register.resources
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\Server.exe.config
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\Server.exe
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.Buffers.dll
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.Memory.dll
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.Text.Json.dll
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.ValueTuple.dll
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.Buffers.xml
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.Memory.xml
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.Text.Json.xml
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\System.ValueTuple.xml
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.Builder.resources
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.register.resources
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.Login.resources
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.Select.resources
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.TestName.resources
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.Provide.resources
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.MainForm.resources
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.Ordermatter.resources
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.OrderProduct.resources
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.csproj.GenerateResource.cache
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.exe
+C:\Users\Admin\source\test\DoyunServer\Server\Server\obj\Debug\Server.pdb
+C:\Users\Admin\source\test\DoyunServer\Server\Server\bin\Debug\Server.pdb
+C:\Users\Admin\Desktop\스팩미니프로젝트\우리조\4조 프로젝트1\DoyunServer\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\스팩미니프로젝트\우리조\4조 프로젝트1\DoyunServer\Server\Server\obj\Debug\Server.exe
+C:\Users\Admin\Desktop\스팩미니프로젝트\우리조\4조 프로젝트1\DoyunServer\Server\Server\obj\Debug\Server.pdb

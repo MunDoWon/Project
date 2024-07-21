@@ -1,0 +1,100 @@
+﻿@model IEnumerable<LastPatient.Controllers.Prescription>
+
+@{
+    ViewData["Title"] = "PrescriptionDetails";
+}
+<style>
+    #tableStyle {
+        margin-top: 200px;
+        width: 95%;
+    }
+
+    th, td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    body {
+        background-image: url("https://www.bonebest.co.kr/images/hospital-inside-mobile/waiting-room/waiting-room3.jpg");
+        /* opacity: 0.9; */
+        background-size: cover;
+        z-index: 1;
+    }
+
+        body::after {
+            opacity: 0.5;
+            z-index: -1;
+        }
+</style>
+
+
+<div>
+    <h4>처방전</h4>
+    <hr />
+
+    <form asp-action="PrescriptionDetails" method="get">
+        <p>
+            <input type="text" name="id" placeholder="ID를 입력해주세요." />
+            <input type="submit" value="검색" />
+        </p>
+    </form>
+
+    <form asp-action="PrescriptionDetails" method="get">
+        <p>
+            <input type="text" name="patientId" placeholder="환자ID를 입력해주세요." />
+            <input type="submit" value="검색" />
+        </p>
+    </form>
+
+    @if (Model.Any())
+    {
+        <dl class="row">
+            @foreach (var prescription in Model)
+            {
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => prescription.Id)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => prescription.Id)
+                </dd>
+                <dt class="col-sm-2">
+                    환자Id
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => prescription.PatientId)
+                </dd>
+                <dt class="col-sm-2">
+                    처방일자
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => prescription.PrescriptionDate)
+                </dd>
+                  <dt class="col-sm-2">
+                    처방약
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => prescription.MedicationName)
+                </dd>
+                <dt class="col-sm-2">
+                    복용량
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => prescription.Dosage)
+                </dd>
+                <h4>처방전을 들고 약국으로 가세요.</h4>
+            }
+        </dl>
+    }
+    else
+    {
+        <p>검색 결과가 없습니다.</p>
+    }
+</div>
+
+<div>
+    <a asp-action="PatientIndex">뒤로</a>
+</div>
+<br />
+<div>
+    <a asp-action="Main">처음으로</a>
+</div>

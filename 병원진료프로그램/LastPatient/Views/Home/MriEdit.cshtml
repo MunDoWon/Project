@@ -1,0 +1,71 @@
+﻿@model LastPatient.Controllers.Patient
+
+@{
+    ViewData["Title"] = "MriEdit";
+}
+
+<h1>Mri 검진</h1>
+
+<form asp-action="PatientEdit">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="Name" />
+    <input type="hidden" asp-for="Birthdate" />
+    <input type="hidden" asp-for="Date" />
+    <input type="hidden" asp-for="Discounts" />
+    <input type="hidden" asp-for="Symptom" />
+    @* <input type="hidden" asp-for="외과" /> *@
+    @* <input type="hidden" asp-for="내과" /> *@
+    <input type="hidden" asp-for="MRI" value="0" />
+    <input type="hidden" asp-for="CT" />
+    <input type="hidden" asp-for="X_ray" />
+    <input type="hidden" asp-for="TreatmentDetails" />
+    <input type="hidden" asp-for="TreatmentDate" />
+    <input type="hidden" asp-for="ReservationDate" />
+    <input type="hidden" asp-for="HospitalizationDate" />
+    <input type="hidden" asp-for="DischargeDate" />
+    <input type="hidden" asp-for="InCnt" />
+    <input type="hidden" asp-for="OutCnt" />
+
+
+    @{
+        if (Model.Surgery == 1 || Model.Surgery == 0)
+        {
+            <input type="hidden" asp-for="Surgery" />
+        }
+        else if (Model.Surgery == 2)
+        {
+            if (Model.CT == 0 && Model.X_ray == 0)
+            {
+                <input type="hidden" asp-for="Surgery" value="1" />
+            }
+            else
+            {
+                <input type="hidden" asp-for="Surgery" />
+            }
+        }
+        if (Model.Medicine == 1 || Model.Medicine == 0)
+        {
+            <input type="hidden" asp-for="Medicine" />
+        }
+        else if (Model.Medicine == 2)
+        {
+            if (Model.CT == 0 && Model.X_ray == 0)
+            {
+                <input type="hidden" asp-for="Medicine" value="1" />
+            }
+            else
+            {
+                <input type="hidden" asp-for="Medicine" />
+            }
+        }
+    }
+
+    <input type="submit" value="진료완료" class="btn btn-primary" />
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

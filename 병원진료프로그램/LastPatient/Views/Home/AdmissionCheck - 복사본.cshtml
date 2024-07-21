@@ -1,0 +1,52 @@
+﻿@using LastPatient.Controllers;
+@model VisitPatients
+@{
+    ViewData["Title"] = "AdmissionCheck";
+}
+<link rel="stylesheet" type="text/css" href="~/css/Create.css">
+
+
+<style>
+    #btn_adcheck {
+        margin-top: 10px;
+    }
+</style>
+<div id="messageArea"></div>
+
+<h4 id="MainTitle">면회확인</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Check">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Id" class="control-label">ID</label>
+                <input asp-for="Id" class="form-control" disabled />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VisitName" class="control-label">방문자이름</label>
+                <input asp-for="VisitName" class="form-control" disabled />
+                <span asp-validation-for="VisitName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VisitPatient" class="control-label">방문자환자</label>
+                <input asp-for="VisitPatient" class="form-control" disabled />
+                <span asp-validation-for="VisitPatient" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VisitHp" class="control-label">방문자전화번호</label>
+                <input asp-for="VisitHp" class="form-control" disabled />
+                <span asp-validation-for="VisitHp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VisitOX" class="control-label">방문사유</label>
+                <input asp-for="VisitOX" class="form-control" placeholder="승인이 허가되지 않았습니다." disabled />
+                <span asp-validation-for="VisitOX" class="text-danger"></span>
+            </div>
+            <div class="form-group" id="btn_adcheck">
+                <a class="btn btn-primary" asp-action="Admission"> 뒤로가기</a>
+            </div>
+        </form>

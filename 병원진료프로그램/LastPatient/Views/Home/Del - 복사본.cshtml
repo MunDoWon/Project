@@ -1,0 +1,68 @@
+﻿@model LastPatient.Controllers.VisitPatients
+
+@{
+    ViewData["Title"] = "Del";
+}
+<style>
+    #tableStyle {
+        margin-top: 200px;
+        width: 95%;
+    }
+
+    th, td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    body {
+        background-image: url("https://www.bonebest.co.kr/images/hospital-inside-mobile/waiting-room/waiting-room3.jpg");
+        /* opacity: 0.9; */
+        background-size: cover;
+        z-index: 1;
+    }
+
+        body::after {
+            opacity: 0.5;
+            z-index: -1;
+        }
+</style>
+
+
+<h3>정말 삭제 하시겠습니까?</h3>
+<div>
+    <h4>Patient</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.VisitName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.VisitName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VisitHp)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VisitHp)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VisitPatient)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VisitPatient)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VisitOX)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VisitOX)
+        </dd>
+      
+    </dl>
+    
+    <form asp-action="Del">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="삭제" class="btn btn-danger" /> |
+        <a asp-action="Visit">뒤로가기</a>
+    </form>
+</div>

@@ -1,0 +1,52 @@
+﻿@model LastPatient.Controllers.Patient
+
+@{
+    ViewData["Title"] = "InternalEdit";
+}
+
+<h1>내과 진료</h1>
+
+<form asp-action="PatientEdit">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div>
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="Name" />
+        <input type="hidden" asp-for="Birthdate" />
+        <input type="hidden" asp-for="Date" />
+        <input type="hidden" asp-for="Discounts" />
+        <input type="hidden" asp-for="Symptom" />
+        <input type="hidden" asp-for="Surgery" />
+        @* <input type="hidden" asp-for="Medicine" /> *@
+        <input type="hidden" asp-for="MRI" />
+        <input type="hidden" asp-for="CT" />
+        <input type="hidden" asp-for="X_ray" />
+        <input type="hidden" asp-for="TreatmentDetails" />
+        <input type="hidden" asp-for="TreatmentDate" />
+        <input type="hidden" asp-for="ReservationDate" />
+        <input type="hidden" asp-for="HospitalizationDate" />
+        <input type="hidden" asp-for="DischargeDate" />
+        <input type="hidden" asp-for="InCnt" />
+        <input type="hidden" asp-for="OutCnt" />
+
+        @* <input type="submit" value="진료완료" class="btn btn-primary" /> *@
+    </div>
+    <div>
+        @{
+            if (Model.Medicine == 1)
+            {
+                <a asp-action="InternalEdit" asp-route-id="@Model.Id" class="btn btn-outline-success">내과 진료받기</a>
+            }
+            else if (Model.Medicine == 0 || Model.Medicine == 2)
+            {
+                <input type="hidden" asp-for="Medicine" />
+                <input type="submit" value="진료완료" class="btn btn-primary" />
+            }
+        }
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

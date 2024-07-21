@@ -1,0 +1,123 @@
+﻿@{
+    ViewData["Title"] = "Main";
+}
+
+<script src="~/js/Slide.js"></script>
+<link rel="stylesheet" type="text/css" href="~/css/Main.css">
+
+<!---------------------- HTML ------------------------->
+<h1 id="MainTitle">5조 미니 프로젝트</h1>
+<hr />
+
+<div>
+    <audio controls autoplay>
+        <source src="music/192.mp3" type="audio/mpeg" id="audio_btn">
+        Your browser does not support the audio element.
+    </audio>
+
+</div>
+<!--------------------슬라이드로 넘어가는 사진 표시------------------------->
+<div class="Weather">
+    <div class="Weather-slideshow-container">
+        <div>
+            <a class="Weather-prev" onclick='WeatherPlusSlides(-1)'>&#10094;</a>
+        </div>
+        <div class="align-Colum align-Center">
+            <div class="Weather-Slides Weather-fade">
+                <img src="/img/siva.png" class="Wimg" alt="1">
+            </div>
+
+            <div class="Weather-Slides Weather-fade">
+                <img src="/img/m.gif" class="Wimg" alt="2">
+            </div>
+
+            <div class="Weather-Slides Weather-fade">
+                <img src="/img/Sp-7.png" class="Wimg" alt="3">
+            </div>
+
+            <div class="Weather-Slides Weather-fade">
+                <img src="/img/Sp-1.png" class="Wimg" alt="4">
+            </div>
+
+            <div class="Weather-Slides Weather-fade">
+                <img src="/img/Sp-2.png" class="Wimg" alt="5">
+            </div>
+
+            <div class="Weather-Slides Weather-fade">
+                <img src="/img/Sp-3.png" class="Wimg" alt="6">
+            </div>
+
+            <div class="Weather-Slides Weather-fade">
+                <img src="/img/Sp-4.png" class="Wimg" alt="7">
+            </div>
+
+            <div class="Weather-Slides Weather-fade">
+                <img src="/img/Sp-5.png" class="Wimg" alt="8">
+            </div>
+
+            <div class="Weather-Slides Weather-fade">
+                <img src="/img/Sp-6.png" class="Wimg" alt="9">
+            </div>
+        </div>
+
+        <div>
+            <a class="Weather-next" onclick='WeatherPlusSlides(1)'>&#10095;</a>
+        </div>
+
+    </div>
+    <br>
+    <div style='text-align: center;'>
+        <span class="Weather-dot" onclick='WeatherCurrentSlide(1)'></span>
+        <span class="Weather-dot" onclick='WeatherCurrentSlide(2)'></span>
+        <span class="Weather-dot" onclick='WeatherCurrentSlide(3)'></span>
+        <span class="Weather-dot" onclick='WeatherCurrentSlide(4)'></span>
+        <span class="Weather-dot" onclick='WeatherCurrentSlide(5)'></span>
+        <span class="Weather-dot" onclick='WeatherCurrentSlide(6)'></span>
+        <span class="Weather-dot" onclick='WeatherCurrentSlide(7)'></span>
+        <span class="Weather-dot" onclick='WeatherCurrentSlide(8)'></span>
+        <span class="Weather-dot" onclick='WeatherCurrentSlide(9)'></span>
+    </div>
+</div>
+
+
+
+<div id="Content">
+
+    <div class="image-container">
+        <!---------------------- 이미지1을 클릭하면 페이지 이동 ------------------------->
+        <div class="image-wrapper">
+            <div class="image-label">①</div>
+            <button class="image-button" onclick="location.href='@Url.Action("Index", "Home")'">
+                <img src="img/clipboard.png" alt="이미지 1">
+                <div class="image-label">접수</div>
+            </button>
+        </div>
+
+        <!---------------------- 이미지2를 클릭하면 페이지 이동 ------------------------->
+        <div class="image-wrapper">
+            <div class="image-label">②</div>
+            <button class="image-button" onclick="location.href='@Url.Action("PatientList", "Home")'">
+                <img src="img/phonendoscope.png" alt="이미지 2">
+                <div class="image-label">진료보기</div>
+            </button>
+        </div>
+
+        <!---------------------- 이미지3를 클릭하면 페이지 이동 ------------------------->
+
+        <div class="image-wrapper">
+            <div class="image-label">③</div>
+            <button class="image-button" onclick="location.href='@Url.Action("Admission", "Home")'">
+                <img src="img/icons8-침대-50.png" alt="이미지 3">
+                <div class="image-label">면회 예약</div>
+            </button>
+
+        </div>
+        <!---------------------- 이미지4를 클릭하면 페이지 이동 ------------------------->
+
+        <div class="image-wrapper">
+            <div class="image-label">④</div>
+            <button class="image-button" onclick="location.href='@Url.Action("Login", "Home")'">
+                <img src="img/icons8-의사-50.png" alt="이미지 4">
+                <div class="image-label">진단</div>
+            </button>
+        </div>

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<LastPatient.Controllers.Patient>
+
+@{
+    ViewData["Title"] = "Admission";
+}
+
+<link rel="stylesheet" type="text/css" href="~/css/Receipt.css" />
+<h1 id="MainTitle">면회신청시스템</h1>
+<br />
+
+<form asp-controller="Home" asp-action="Admission" method="get">
+    <p>
+        이름: <input type="text" name="SearchString" placeholder="이름을 입력해주세요." />
+        <input type="submit" value="검색" />
+    </p>
+</form>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                번호
+            </th>
+            <th>
+                생일
+            </th>
+            <th>
+                날짜
+            </th>
+            <th>
+                기능
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem =>item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    <a class="btn btn-outline-primary" asp-action="Crt" asp-route-id="@item.Id">면회신청</a> 
+                </td>
+                
+                   
+                
+            </tr>
+        }
+    </tbody>
+</table>
+<br/>
+<a class="btn btn-outline-primary" asp-action="Main">처음으로</a>

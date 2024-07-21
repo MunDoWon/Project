@@ -1,0 +1,104 @@
+﻿@using LastPatient.Controllers;
+@model Patient
+
+@{
+    ViewData["Title"] = "PatientIndex";
+}
+<link rel="stylesheet" type="text/css" href="~/css/Receipt.css">
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<input type="hidden" asp-for="Id" />
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				명칭
+			</th>
+			<th>
+				위치
+			</th>
+			<th>
+				진료받기
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@{
+			if (Model.Surgery == 1)
+			{
+				<tr>
+					<td>외과</td>
+					<td>1층 105호</td>
+					<td><a asp-action="SurgicalEdit" asp-route-id="@Model.Id" class="btn btn-outline-success">외과 진료받기</a></td>
+				</tr>
+			}
+			if (Model.Medicine == 1)
+			{
+				<tr>
+					<td>내과</td>
+					<td>2층 203호</td>
+					<td><a asp-action="InternalEdit" asp-route-id="@Model.Id" class="btn btn-outline-success">내과 진료받기</a></td>
+				</tr>
+			}
+			if (Model.MRI == 1)
+			{
+				<tr>
+					<td>Mri</td>
+					<td>2층 213호</td>
+					<td><a asp-action="MriEdit" asp-route-id="@Model.Id" class="btn btn-outline-success">Mri 검진하기</a></td>
+				</tr>
+			}
+			if (Model.CT == 1)
+			{
+				<tr>
+					<td>Ct</td>
+					<td>1층 109호</td>
+					<td><a asp-action="CtEdit" asp-route-id="@Model.Id" class="btn btn-outline-success">Ct 검진하기</a></td>
+				</tr>
+			}
+			if (Model.X_ray == 1)
+			{
+
+				<tr>
+					<td>Xray</td>
+					<td>1층 107호 </td>
+					<td><a asp-action="XrayEdit" asp-route-id="@Model.Id" class="btn btn-outline-success">Xray 검진하기</a></td>
+				</tr>
+			}
+			if (Model.Surgery == 2)
+			{
+				<tr>
+					<td>외과</td>
+					<td>1층 105호</td>
+					<td><a onclick="medical()" class="btn btn-outline-secondary">외과 진료받기</a></td>
+				</tr>
+			}
+			if (Model.Medicine == 2)
+			{
+				<tr>
+					<td>내과</td>
+					<td>2층 203호</td>
+					<td><a onclick="medical()" class="btn btn-outline-secondary">내과 진료받기</a></td>
+				</tr>
+			}
+		}
+	</tbody>
+</table>
+
+
+@{
+	if (Model.Surgery == 0 && Model.Medicine == 0 && Model.CT == 0 && Model.MRI == 0 && Model.X_ray == 0)
+	{
+		/*진단서 View로 연결 필요*/
+		<a asp-action="PrescriptionDetails" asp-route-id="@Model.Id" class="btn btn-outline-success">진단서 확인하기</a>
+	}
+}
+<br/>
+<div>
+	<a class="btn btn-primary" asp-action="PatientList">뒤로가기</a>
+</div>
+<script>
+	function medical() {
+		alert('정밀검사를 먼저하고 오세요.');
+	}
+</script>

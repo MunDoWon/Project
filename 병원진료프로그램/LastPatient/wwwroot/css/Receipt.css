@@ -1,0 +1,18 @@
+﻿/*-----------가운데로 모이게 해줌-----------*/
+#MainTitle {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 54px;
+}
+
+.table th {
+    font-size: 24px;
+    text-align: center;
+}
+
+tr {
+    font-size: 26px;
+    text-align: center;
+}
