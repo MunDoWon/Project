@@ -1,2 +1,4 @@
 *.resx filter=lfs diff=lfs merge=lfs -text
 *.so filter=lfs diff=lfs merge=lfs -text
+C:/Users/이규자/OneDrive/바탕 filter=lfs diff=lfs merge=lfs -text
+화면/gitUpload/반도체공정MES/DoyunClient/MiniProjectClient01/MiniProjectClient01/Form1.resx filter=lfs diff=lfs merge=lfs -text
